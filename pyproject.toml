@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "saber-risk"
+dynamic = ["version"]
+description = "SABER: Scaling-Aware Best-of-N Estimation of Risk for LLM safety evaluation"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "Xiaodong Liu, Mingqian Feng"},
+]
+keywords = [
+    "llm",
+    "safety",
+    "jailbreak",
+    "best-of-n",
+    "risk-estimation",
+    "adversarial",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "scipy>=1.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/microsoft/saber"
+Documentation = "https://github.com/microsoft/saber#readme"
+Repository = "https://github.com/microsoft/saber"
+
+[tool.hatch.build.targets.wheel]
+packages = ["saber"]
+
+[tool.hatch.version]
+path = "saber/_version.py"
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
