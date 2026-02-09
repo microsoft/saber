@@ -38,7 +38,7 @@ pip install saber-risk
 Or from source:
 
 ```bash
-git clone https://github.com/namisan/saber
+git clone https://github.com/microsoft/saber
 cd saber
 pip install -e .
 ```
@@ -129,7 +129,7 @@ For any questions regarding the package or paper, feel free to reach out to:
 
 - **Mingqian Feng** - mfeng7@ur.rochester.edu
 - **Xiaodong Liu** - xiaodl@microsoft.com
-- **Weiwei Yang** - weiweiy@microsoft.com
+- **Weiwei Yang** - weiwei.yang@microsoft.com
 
 ## License
 

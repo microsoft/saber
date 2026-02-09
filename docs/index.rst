@@ -35,7 +35,7 @@ Or from source:
 
 .. code-block:: bash
 
-   git clone https://github.com/namisan/saber
+   git clone https://github.com/microsoft/saber
    cd saber
    pip install -e .
 

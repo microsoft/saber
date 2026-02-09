@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "saber-risk"
-version = "0.2.0"
+dynamic = ["version"]
 description = "SABER: Scaling-Aware Best-of-N Estimation of Risk for LLM safety evaluation"
 readme = "README.md"
 license = {text = "MIT"}
@@ -44,12 +44,15 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/namisan/saber"
-Documentation = "https://github.com/namisan/saber#readme"
-Repository = "https://github.com/namisan/saber"
+Homepage = "https://github.com/microsoft/saber"
+Documentation = "https://github.com/microsoft/saber#readme"
+Repository = "https://github.com/microsoft/saber"
 
 [tool.hatch.build.targets.wheel]
 packages = ["saber"]
+
+[tool.hatch.version]
+path = "saber/_version.py"
 
 [tool.mypy]
 python_version = "3.9"

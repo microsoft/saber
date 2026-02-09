@@ -1,11 +1,19 @@
 # Configuration file for the Sphinx documentation builder.
 
+import sys
+import os
+
+# Add the project root to the path so we can import saber
+sys.path.insert(0, os.path.abspath('..'))
+
+from saber._version import __version__
+
 project = 'SABER'
 copyright = '2026, Mingqian Feng, Xiaodong Liu, Weiwei Yang'
 author = 'Mingqian Feng, Xiaodong Liu, Weiwei Yang'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1.0'
+release = __version__
 
 # -- General configuration ---------------------------------------------------
 

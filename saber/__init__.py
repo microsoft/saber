@@ -24,7 +24,7 @@ Reference:
     Language Models under Best-of-N Sampling" (arXiv:2601.22636, 2026)
 """
 
-__version__ = "0.1.0"
+from ._version import __version__
 
 # Main class
 from .estimator import SABER
