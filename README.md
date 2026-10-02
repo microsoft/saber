@@ -17,7 +17,7 @@ Standard LLM safety evaluations use single-shot (ASR@1) metrics, but real attack
 - **Estimate** how many attempts are needed to reach a target success rate  
 - **Quantify** uncertainty in adversarial risk predictions
 
-![SABER Method Overview](figures/saber_method.png)
+![SABER Method Overview](https://raw.githubusercontent.com/microsoft/saber/main/figures/saber_method.png)
 
 ### Key Insight
 
@@ -103,9 +103,9 @@ pip install -r requirements.txt
 make html
 ```
 
-- **[Quick Start](docs/quickstart.rst)** - Getting started guide
-- **[API Reference](docs/api_reference.rst)** - Complete API documentation
-- **[Advanced Usage](docs/advanced_usage.rst)** - Model selection, scaling curves, low-level API
+- **[Quick Start](https://github.com/microsoft/saber/blob/main/docs/quickstart.rst)** - Getting started guide
+- **[API Reference](https://github.com/microsoft/saber/blob/main/docs/api_reference.rst)** - Complete API documentation
+- **[Advanced Usage](https://github.com/microsoft/saber/blob/main/docs/advanced_usage.rst)** - Model selection, scaling curves, low-level API
 
 ## Citation
 
@@ -133,4 +133,4 @@ For any questions regarding the package or paper, feel free to reach out to:
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](https://github.com/microsoft/saber/blob/main/LICENSE) for details.
